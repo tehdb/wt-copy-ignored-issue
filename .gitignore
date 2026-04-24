@@ -2,8 +2,8 @@ HELP.md
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+!**/src/main/**
+!**/src/test/**
 
 ### STS ###
 .apt_generated
@@ -17,14 +17,22 @@ bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+/lib
 
 ### NetBeans ###
 /nbproject/private/
@@ -36,5 +44,20 @@ out/
 ### VS Code ###
 .vscode/
 
+### Project specific excludes ###
+.DS_Store
+
 ### Kotlin ###
 .kotlin
+
+### wt - worktrunk
+.env
+.config/
+.worktreeinclude
+
+### Environment Configurations
+src/main/resources/logback-spring.xml
+src/main/resources/application-dev.yml
+src/main/resources/application-test.yml
+src/main/resources/application-prod.yml
+src/main/resources/application-local.yml
