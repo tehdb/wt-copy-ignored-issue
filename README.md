@@ -1,0 +1,1 @@
+# wt-copy-ignored-issue
